@@ -3,226 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
-
-     <!-- Navbar started -->
-
-
-    <div class="navbar bg-[yellow]">
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Blogging App</a>
-  </div>
-  <div class="flex-none">
-    <div class="dropdown dropdown-end">
     
-      <div
-        tabindex="0"
-        class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-        <div class="card-body">
-          <span class="text-lg font-bold">8 Items</span>
-          <span class="text-info">Subtotal: $999</span>
-          <div class="card-actions">
-            <button class="btn btn-primary btn-block">View cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="dropdown dropdown-end">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
-      </div>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li>
-          <a class="justify-between">
-            Profile
-            <span class="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a id="logout-btn">Logout</a></li>
-        <li><a href="dashboard.html">Publish a blog</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+            <!-- navbar start -->
+            <div class="navbar bg-base-100 bg-primary text-primary-content">
+                <div class="flex-1">
+                    <button class="btn btn-ghost text-xl">Personal Blogging App</button>
+                </div>
+                <div class="flex-none">
+                  <ul class="menu menu-horizontal px-1">
+                    <button id="logout">Logout</button>
+                </ul>
+                </div>
+              </div>
+            <!-- navbar end -->
+            <div class="navbar bg-[#FFF6F6]">
+                <div class="mx-2 flex-1 px-2"><b>Dashboard</b>
+                </div>
+            </div>
 
 
 
-    <!-- Navbar ended -->
-
-
-
-    <!-- My Blog started -->
-
-
-    <div class="mx-[30px] mt-8">
-        <h2 class="text-2xl font-bold">All Blogs</h2>
-    </div>
-
-
-    <div class="mt-5 border mx-[30px] sm:mx-[70px]lg:mx-[70px] p-[30px] shadow-lg rounded-xl">
-   
-
-        <div class="flex flex-wrap">
-
-             <div>
-            <img class="m-7 " src="men image.jpeg" alt="">
+            <!-- post add -->
+            <div class="navbar bg-base-100 bg-primary text-primary-content">
+            <form id="form-add">
+                <input type="text" placeholder="placeholder" id="title"><br>
+                <input type="text" placeholder="What is in your mind" id="description"><br>
+                <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-primary">Publish Blog</button>
+                </div>
+            </form>
         </div>
 
-        <div class="flex-wrap">
-            <h1 class="font-bold text-2xl mt-5">Lorem ipsum dolor so quisquam.</h1>
-            <h1 class="mt-4"><span>Ashar khan</span> -  21 August 2024</h1>
-        </div>
+        
 
 
-        </div>
 
 
-        <div class="mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, odio. Eaque illo velit quos odit nam recusandae illum obcaecati cum saepe. Non est saepe quo molestias omnis, pariatur voluptate quos?
-            Natus autem cumque necessitatibus quos quidem doloribus quaerat provident ratione officiis repellendus, dolor recusandae aperiam fuga, adipisci deleniti consectetur quo id perspiciatis amet vitae, quisquam ipsa. Eveniet similique aperiam consequatur.
-            Temporibus, mollitia. Sequi quo temporibus dolorem eligendi adipisci aut sunt saepe, quae consequatur quos voluptatem qui, id ad molestiae corrupti numquam. Natum iluptatibus.
-            Culpa suscilicabo deserunt, rem corporis obcaecati perferendis quae tempora consequatur? Deserunt provident voluptate recusandae voluptas, a officiis, quibusdam dolor expedita corrupti, quia alias reprehenderit? Nulla?</p>
-        </div>
+        <div id="div"></div>
 
-
-       
-
-       
-
-
-</div>
-
-
-
-
-
-
-
-
-
- <div class="mt-5 border mx-[30px] sm:mx-[70px]lg:mx-[70px] p-[30px] shadow-lg rounded-xl">
-   
-
-        <div class="flex flex-wrap">
-
-             <div>
-            <img class="m-7 " src="men image.jpeg" alt="">
-        </div>
-
-        <div class="flex-wrap">
-            <h1 class="font-bold text-2xl mt-5">Lorem ipsum dolor so quisquam.</h1>
-            <h1 class="mt-4"><span>Ashar khan</span> -  21 August 2024</h1>
-        </div>
-
-
-        </div>
-
-
-        <div class="mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, odio. Eaque illo velit quos odit nam recusandae illum obcaecati cum saepe. Non est saepe quo molestias omnis, pariatur voluptate quos?
-            Natus autem cumque necessitatibus quos quidem doloribus quaerat provident ratione officiis repellendus, dolor recusandae aperiam fuga, adipisci deleniti consectetur quo id perspiciatis amet vitae, quisquam ipsa. Eveniet similique aperiam consequatur.
-            Temporibus, mollitia. Sequi quo temporibus dolorem eligendi adipisci aut sunt saepe, quae consequatur quos voluptatem qui, id ad molestiae corrupti numquam. Natum iluptatibus.
-            Culpa suscilicabo deserunt, rem corporis obcaecati perferendis quae tempora consequatur? Deserunt provident voluptate recusandae voluptas, a officiis, quibusdam dolor expedita corrupti, quia alias reprehenderit? Nulla?</p>
-        </div>
-
-
-       
-
-       
-
-
-</div>
-
-
-
-
-
-
-
- <div class="mt-5 border mx-[30px] sm:mx-[70px]lg:mx-[70px] p-[30px] shadow-lg rounded-xl">
-   
-
-        <div class="flex flex-wrap">
-
-             <div>
-            <img class="m-7 " src="men image.jpeg" alt="">
-        </div>
-
-        <div class="flex-wrap">
-            <h1 class="font-bold text-2xl mt-5">Lorem ipsum dolor so quisquam.</h1>
-            <h1 class="mt-4"><span>Ashar khan</span> -  21 August 2024</h1>
-        </div>
-
-
-        </div>
-
-
-        <div class="mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, odio. Eaque illo velit quos odit nam recusandae illum obcaecati cum saepe. Non est saepe quo molestias omnis, pariatur voluptate quos?
-            Natus autem cumque necessitatibus quos quidem doloribus quaerat provident ratione officiis repellendus, dolor recusandae aperiam fuga, adipisci deleniti consectetur quo id perspiciatis amet vitae, quisquam ipsa. Eveniet similique aperiam consequatur.
-            Temporibus, mollitia. Sequi quo temporibus dolorem eligendi adipisci aut sunt saepe, quae consequatur quos voluptatem qui, id ad molestiae corrupti numquam. Natum iluptatibus.
-            Culpa suscilicabo deserunt, rem corporis obcaecati perferendis quae tempora consequatur? Deserunt provident voluptate recusandae voluptas, a officiis, quibusdam dolor expedita corrupti, quia alias reprehenderit? Nulla?</p>
-        </div>
-
-
-       
-
-       
-
-
-</div>
-
-
-
-
-
-
- <div class="mt-5 border mx-[30px] sm:mx-[70px]lg:mx-[70px] p-[30px] shadow-lg rounded-xl">
-   
-
-        <div class="flex flex-wrap">
-
-             <div>
-            <img class="m-7 " src="men image.jpeg" alt="">
-        </div>
-
-        <div class="flex-wrap">
-            <h1 class="font-bold text-2xl mt-5">Lorem ipsum dolor so quisquam.</h1>
-            <h1 class="mt-4"><span>Ashar khan</span> -  21 August 2024</h1>
-        </div>
-
-
-        </div>
-
-
-        <div class="mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, odio. Eaque illo velit quos odit nam recusandae illum obcaecati cum saepe. Non est saepe quo molestias omnis, pariatur voluptate quos?
-            Natus autem cumque necessitatibus quos quidem doloribus quaerat provident ratione officiis repellendus, dolor recusandae aperiam fuga, adipisci deleniti consectetur quo id perspiciatis amet vitae, quisquam ipsa. Eveniet similique aperiam consequatur.
-            Temporibus, mollitia. Sequi quo temporibus dolorem eligendi adipisci aut sunt saepe, quae consequatur quos voluptatem qui, id ad molestiae corrupti numquam. Natum iluptatibus.
-            Culpa suscilicabo deserunt, rem corporis obcaecati perferendis quae tempora consequatur? Deserunt provident voluptate recusandae voluptas, a officiis, quibusdam dolor expedita corrupti, quia alias reprehenderit? Nulla?</p>
-        </div>
-
-
-       
-
-       
-
-
-</div>
-
-
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="app.js"></script>
 </body>
 </html>

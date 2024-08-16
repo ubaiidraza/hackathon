@@ -1,18 +1,19 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCLYCyutiTJyA5gwkeel61nfhnbu0m_cp8",
-  authDomain: "blogging-app-9c3c3.firebaseapp.com",
-  projectId: "blogging-app-9c3c3",
-  storageBucket: "blogging-app-9c3c3.appspot.com",
-  messagingSenderId: "876768355025",
-  appId: "1:876768355025:web:5f76c3fb8f053e93cd1bf0",
-  measurementId: "G-J22NC5D61W",
-};
-
+    apiKey: "AIzaSyCPJrZ9D6oUmTcJyhbvYADnPoYY3E8-5sk",
+    authDomain: "hackathon-8b227.firebaseapp.com",
+    projectId: "hackathon-8b227",
+    storageBucket: "hackathon-8b227.appspot.com",
+    messagingSenderId: "219700908474",
+    appId: "1:219700908474:web:6fd91e782b2279638ccd83",
+    measurementId: "G-HWZWE0WN38"
+  }
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
+export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);
